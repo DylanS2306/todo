@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial_scale=1.0"/>
+        <title>
+            List of Goals
+        </title>
+        <!-- CSS Style sheets-->
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    </head>
+<body>
+    <main class="app"> <!--Set Class to class="app"-->
+        <section class="greeting"> <!--Set Class to class="greeting OR ANOTHER NAME"-->
+            <h2 class="title">
+                Good Morning, <input type="text" id="name" placeholder="Name Here">
+            </h2>
+        </section>
+        <section class="create-goal"> <!--GOAL LIST GOES HERE-->
+            <h3>
+                Crete a Goal
+            </h3>
+            <form id="new-goal-form">
+                <h4> What's your goal?</h4>
+                <input type="text" placeholder="e.g Read for 30 minutes" name="content" id="content"/>
+                <h4>Pick a Subset</h4>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="category" id="category1" value="academic">
+                        <span class="bubble academic"></span>
+                        <div>Academic</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="category" id="category2" value="physical">
+                        <span class="bubble physical"></span>
+                        <div>Physical</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="category" id="category2" value="social">
+                        <span class="bubble social"></span>
+                        <div>Social</div>
+                    </label>
+                </div>
+                <input type="submit" value="Add goal">
+            </form>
+
+        </section>
+        <section class="goal-list"> <!--goal-list class TOAD-->
+            <h3>Goal List</h3>
+                <div class="list" id="goal-list"> </div>
+        </section>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
